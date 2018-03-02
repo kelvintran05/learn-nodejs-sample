@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link href="assets/style.css" type="text/css" rel="stylesheet"/>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+
+<body>
+    <h1>Hello World! EJS Template</h1>
+    <form method="POST" action="/person">
+        First Name:
+        <input type="text" id="firstname" name="firstname" />
+        <br> Last Name:
+        <input type="text" id="lastname" name="lastname" />
+        <br>
+        <input id="submit" type="submit" value="submit">
+    </form>
+    <!-- <script>
+        $("#submit").click(function () {
+            var f = $("#firstname").val();
+            var l = $("#lastname").val();
+            $.ajax({
+                type: "POST",
+                url: "/json",
+                data: JSON.stringify({ firstname: f, lastname: l }),
+                dataType: 'json',
+                contentType: 'application/json'
+            });
+        })
+
+    </script> -->
+    <!-- <script>
+        $.ajax({
+            type: "POST",
+            url: "/personjson",
+            data: JSON.stringify({firstname:'Jane',
+            lastname:'Doe'}),
+            dataType: 'json',
+            contentType: 'application/json'
+        });
+    </script> -->
+</body>
+
+</html>
